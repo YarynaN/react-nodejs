@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "npx babel src -d build",
     "start": "nodemon --exec ./node_modules/@babel/node/bin/babel-node.js src/index",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [],
   "author": "Yaryna Mashta",
   "license": "ISC",
   "dependencies": {
+    "@jest/globals": "^26.6.2",
     "body-parser": "^1.19.0",
     "express": "^4.17.1"
   },
@@ -19,6 +21,9 @@
     "@babel/core": "^7.12.10",
     "@babel/node": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
-    "nodemon": "^2.0.7"
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1",
+    "supertest": "^6.1.3"
   }
 }
