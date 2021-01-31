@@ -6,7 +6,8 @@
   "scripts": {
     "build": "npx babel src -d build",
     "start": "nodemon --exec ./node_modules/@babel/node/bin/babel-node.js src/index",
-    "test": "jest"
+    "test": "jest",
+    "lint": "npx eslint --fix *.js src test *.js"
   },
   "keywords": [],
   "author": "Yaryna Mashta",
@@ -21,6 +22,9 @@
     "@babel/core": "^7.12.10",
     "@babel/node": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
+    "eslint": "6.2.2",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.18.2",
     "jest": "^26.6.3",
     "nodemon": "^2.0.7",
     "prettier": "^2.2.1",
